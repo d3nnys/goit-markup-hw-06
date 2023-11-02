@@ -23,36 +23,89 @@
   <body>
     <header class="header-page">
       <div class="container">
-        <nav class="header-nav">
-          <a href="./index.html" class="header-logo"
-            >Web<span class="header-link">Studio</span></a
-          >
-          <ul class="header-list">
-            <li class="header-list-item">
-              <a href="./index.html" class="nav-link current">Studio</a>
+        <a href="./index.html" class="header-logo"
+          >Web<span class="header-link">Studio</span></a
+        >
+        <div class="mobile-header is-open">
+          <nav class="header-nav">
+            <ul class="header-list">
+              <li class="header-list-item">
+                <a href="./index.html" class="nav-link current">Studio</a>
+              </li>
+              <li class="header-list-item">
+                <a href="" class="nav-link">Portfolio</a>
+              </li>
+              <li class="header-list-item">
+                <a href="" class="nav-link">Contacts</a>
+              </li>
+              <button class="mobile-menu-btn" type="button">
+                <svg class="mobile-menu-icon" width="8" height="8">
+                  <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+              </button>
+            </ul>
+          </nav>
+          <address class="nav-address">
+            <ul class="header-address-list">
+              <li class="header-address-list-item">
+                <a href="mailto:info@devstudio.com" class="contact-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="header-address-list-item">
+                <a href="tel:+110001111111" class="contact-link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="header-social-list">
+            <li class="header-social-list-item">
+              <a class="header-social-list-item-link" href="">
+                <svg
+                  class="header-social-list-item-icon"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="header-list-item">
-              <a href="" class="nav-link">Portfolio</a>
+            <li class="header-social-list-item">
+              <a class="header-social-list-item-link" href="">
+                <svg
+                  class="header-social-list-item-icon"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
-            <li class="header-list-item">
-              <a href="" class="nav-link">Contacts</a>
+            <li class="header-social-list-item">
+              <a class="header-social-list-item-link" href="">
+                <svg
+                  class="header-social-list-item-icon"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header-social-list-item">
+              <a class="header-social-list-item-link" href="">
+                <svg
+                  class="header-social-list-item-icon"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </nav>
-        <address class="nav-address">
-          <ul class="header-address-list">
-            <li class="header-address-list-item">
-              <a href="mailto:info@devstudio.com" class="contact-link"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="header-address-list-item">
-              <a href="tel:+110001111111" class="contact-link"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
+        </div>
         <button class="header-btn">
           <svg class="header-btn-icon" width="16.8" height="14.4">
             <use href="./images/icons.svg#icon-burger"></use>
@@ -132,7 +185,8 @@
             <li class="team-list-item">
               <img
                 class="team-list-item-img"
-                src="./images/img1.jpg"
+                src="./images/team1.jpg"
+                srcset="./images/team1x2.jpg 2x, ./images/team1x3.jpg 3x"
                 alt="guy with a bread"
                 width="264"
                 height="260"
@@ -191,7 +245,8 @@
             <li class="team-list-item">
               <img
                 class="team-list-item-img"
-                src="./images/img2.jpg"
+                src="./images/team2.jpg"
+                srcset="./images/team2x2.jpg 2x, ./images/team2x3.jpg 3x"
                 alt="a very cheerful guy"
                 width="264"
                 height="260"
@@ -250,7 +305,8 @@
             <li class="team-list-item">
               <img
                 class="team-list-item-img"
-                src="./images/img3.jpg"
+                src="./images/team3.jpg"
+                srcset="./images/team3x2.jpg 2x, ./images/team3x3.jpg 3x"
                 alt="sweet girl"
                 width="264"
                 height="260"
@@ -309,7 +365,8 @@
             <li class="team-list-item">
               <img
                 class="team-list-item-img"
-                src="./images/img4.jpg"
+                src="./images/team4.jpg"
+                srcset="./images/team4x2.jpg 2x, ./images/team4x3.jpg 3x"
                 alt="a guy who develops a graphical interface"
                 width="264"
                 height="260"
@@ -376,7 +433,11 @@
             <li class="portfolio-item">
               <div class="img-container">
                 <img
-                  src="./images/portfolio-img1.jpg"
+                  src="./images/portfolio1.jpg"
+                  srcset="
+                    ./images/portfolio1x2.jpg 2x,
+                    ./images/portfolio1x3.jpg 3x
+                  "
                   alt="bank application"
                   width="360"
                   height="300"
@@ -395,7 +456,11 @@
             <li class="portfolio-item">
               <div class="img-container">
                 <img
-                  src="./images/portfolio-img2.jpg"
+                  src="./images/portfolio2.jpg"
+                  srcset="
+                    ./images/portfolio2x2.jpg 2x,
+                    ./images/portfolio2x3.jpg 3x
+                  "
                   alt="scanning of qr codes"
                   width="360"
                   height="300"
@@ -414,7 +479,11 @@
             <li class="portfolio-item">
               <div class="img-container">
                 <img
-                  src="./images/portfolio-img3.jpg"
+                  src="./images/portfolio3.jpg"
+                  srcset="
+                    ./images/portfolio3x2.jpg 2x,
+                    ./images/portfolio3x3.jpg 3x
+                  "
                   alt="application on your phone and laptop"
                   width="360"
                   height="300"
@@ -433,7 +502,11 @@
             <li class="portfolio-item">
               <div class="img-container">
                 <img
-                  src="./images/portfolio-img4.jpg"
+                  src="./images/portfolio4.jpg"
+                  srcset="
+                    ./images/portfolio4x2.jpg 2x,
+                    ./images/portfolio4x3.jpg 3x
+                  "
                   alt="driver in the car"
                   width="360"
                   height="300"
@@ -452,7 +525,11 @@
             <li class="portfolio-item">
               <div class="img-container">
                 <img
-                  src="./images/portfolio-img5.jpg"
+                  src="./images/portfolio5.jpg"
+                  srcset="
+                    ./images/portfolio5x2.jpg 2x,
+                    ./images/portfolio5x3.jpg 3x
+                  "
                   alt="illustrative pictures on your phone"
                   width="360"
                   height="300"
@@ -471,7 +548,11 @@
             <li class="portfolio-item">
               <div class="img-container">
                 <img
-                  src="./images/portfolio-img6.jpg"
+                  src="./images/portfolio6.jpg"
+                  srcset="
+                    ./images/portfolio6x2.jpg 2x,
+                    ./images/portfolio6x3.jpg 3x
+                  "
                   alt="a girl is talking on the phone"
                   width="360"
                   height="300"
