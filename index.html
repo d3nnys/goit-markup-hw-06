@@ -23,38 +23,74 @@
   <body>
     <header class="header-page">
       <div class="container">
-        <a href="./index.html" class="header-logo"
-          >Web<span class="header-link">Studio</span></a
-        >
-        <div class="mobile-header">
-          <nav class="header-nav">
-            <ul class="header-list">
-              <li class="header-list-item">
-                <a href="./index.html" class="nav-link current">Studio</a>
-              </li>
-              <li class="header-list-item">
-                <a href="" class="nav-link">Portfolio</a>
-              </li>
-              <li class="header-list-item">
-                <a href="" class="nav-link">Contacts</a>
-              </li>
-              <button class="mobile-menu-btn" type="button">
-                <svg class="mobile-menu-icon" width="8" height="8">
-                  <use href="./images/icons.svg#icon-close"></use>
-                </svg>
-              </button>
-            </ul>
-          </nav>
-          <address class="nav-address">
-            <ul class="header-address-list">
-              <li class="header-address-list-item">
-                <a href="mailto:info@devstudio.com" class="contact-link"
-                  >info@devstudio.com</a
+        <nav class="header-nav">
+          <a href="./index.html" class="header-logo"
+            >Web<span class="header-link">Studio</span></a
+          >
+          <ul class="header-list">
+            <li class="header-list-item">
+              <a href="./index.html" class="nav-link current">Studio</a>
+            </li>
+            <li class="header-list-item">
+              <a href="" class="nav-link">Portfolio</a>
+            </li>
+            <li class="header-list-item">
+              <a href="" class="nav-link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="nav-address">
+          <ul class="header-address-list">
+            <li class="header-address-list-item">
+              <a href="mailto:info@devstudio.com" class="contact-link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="header-address-list-item">
+              <a href="tel:+110001111111" class="contact-link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+        <!-- !MOBILE========================================================================== -->
+        <div class="mobile-menu">
+          <button class="mobile-menu-btn" type="button">
+            <svg class="mobile-menu-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-list">
+              <li class="mobile-menu-list-item">
+                <a
+                  class="mobile-menu-list-item-link current"
+                  href="./index.html"
+                  >Studio</a
                 >
               </li>
-              <li class="header-address-list-item">
-                <a href="tel:+110001111111" class="contact-link"
+              <li class="mobile-menu-list-item">
+                <a class="mobile-menu-list-item-link" href="">Portfolio</a>
+              </li>
+              <li class="mobile-menu-list-item">
+                <a class="mobile-menu-list-item-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mobile-menu-contact">
+            <ul class="mobile-menu-contact-list">
+              <li class="mobile-menu-contact-list-item">
+                <a
+                  class="mobile-menu-contact-list-item-link current"
+                  href="tel:110001111111"
                   >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-menu-contact-list-item">
+                <a
+                  class="mobile-menu-contact-list-item-link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
                 >
               </li>
             </ul>
@@ -118,7 +154,9 @@
       <section class="section hero-page">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-button">Order Service</button>
+          <button data-modal-open class="hero-button" type="button">
+            Order Service
+          </button>
         </div>
       </section>
       <!-- !about us======================================================================================== 2-->
@@ -655,9 +693,9 @@
       </div>
     </footer>
     <!-- !modal======================================================================================== -->
-    <div class="backdrop is-open">
+    <div data-modal class="backdrop is-hidden">
       <div class="modal-box">
-        <button class="modal-box-btn" type="button">
+        <button data-modal-close class="modal-box-btn" type="button">
           <svg class="icon-x" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -745,5 +783,6 @@
         </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
