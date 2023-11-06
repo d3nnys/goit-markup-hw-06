@@ -471,20 +471,17 @@
             <li class="portfolio-item">
               <div class="img-container">
                 <picture>
-                  srcset=" ./images/portfolio1x2.jpg 2x,
-                  ./images/portfolio1x3.jpg 3x " src="./images/portfolio1.jpg"
-                  alt="bank application" width="360" height="300"
+                  <img
+                    src="./images/portfolio1.jpg"
+                    srcset="
+                      ./images/portfolio1x2.jpg 2x,
+                      ./images/portfolio1x3.jpg 3x
+                    "
+                    alt="bank application"
+                    width="360"
+                    height="300"
+                  />
                 </picture>
-                <img
-                  src="./images/portfolio1.jpg"
-                  srcset="
-                    ./images/portfolio1x2.jpg 2x,
-                    ./images/portfolio1x3.jpg 3x
-                  "
-                  alt="bank application"
-                  width="360"
-                  height="300"
-                />
                 <p class="hidden-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -717,6 +714,7 @@
                 name="user-name"
                 id="user-name"
                 type="text"
+                pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐйЙʼ]+"
                 required
               />
               <svg class="icon-modal" width="18" height="24">
@@ -732,6 +730,7 @@
                 name="phone"
                 id="phone"
                 type="tel"
+                pattern="0-9"
                 required
               />
               <svg class="icon-modal" width="18" height="24">
