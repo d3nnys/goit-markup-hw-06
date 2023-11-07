@@ -18,29 +18,17 @@ body {
 }
 
 .container {
+  max-width: 320px;
   padding: 0 16px;
   margin: 0 auto;
 
-  /* @media screen and (min-width: 320px) {
-    max-width: 767px;
-  } */
-
   @media screen and (min-width: 768px) {
-    padding: 0 15px;
-    width: 768px;
+    max-width: 768px;
   }
 
   @media screen and (min-width: 1158px) {
-    width: 1158px;
-  }
-}
-
-@media (min-width: 1158px) {
-  .container {
     max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
+    padding: 0 15px;
   }
 }
 
@@ -611,6 +599,7 @@ section {
   }
 
   @media screen and ((min-width: 1158px)) {
+    min-width: 264px;
     font-weight: 400;
   }
 }
