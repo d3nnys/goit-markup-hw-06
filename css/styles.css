@@ -118,8 +118,8 @@ section {
 
 /* !HEADER============================================ */
 
-.header-page {
-  padding: 28px 0;
+.page-header {
+  padding: 16px 0;
   position: relative;
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
@@ -146,7 +146,7 @@ section {
   color: #4d5ae5;
 }
 
-.header-page .container {
+.page-header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -225,10 +225,11 @@ section {
 }
 
 .nav-address {
-  display: none;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
   @media screen and (min-width: 768px) {
-    display: block;
     font-style: normal;
   }
 }
@@ -463,9 +464,8 @@ section {
         url(../images/hero-bg@3x-tablet.jpg);
     }
   }
-}
-@media screen and (min-width: 1158px) {
-  .hero-page {
+
+  @media screen and (min-width: 1158px) {
     background-image: linear-gradient(
         to bottom,
         rgba(46, 47, 66, 0.7),
@@ -802,18 +802,21 @@ section {
   }
 }
 
-.portfolio-item:hover .hidden-text {
-  transform: translateY(0);
-}
-.portfolio-item:hover .hidden-container {
-  transform: translateY(0);
-}
+@media screen and (min-width: 1158px) {
+  .portfolio-item:hover .hidden-text {
+    transform: translateY(0);
+  }
 
-.portfolio-item:hover {
-  box-shadow: 0px 2px 1px 0px #2e2f4214, 0px 1px 1px 0px #2e2f4229,
-    0px 1px 6px 0px #2e2f4214;
+  .portfolio-item:hover .hidden-container {
+    transform: translateY(0);
+  }
 
-  cursor: pointer;
+  .portfolio-item:hover {
+    box-shadow: 0px 2px 1px 0px #2e2f4214, 0px 1px 1px 0px #2e2f4229,
+      0px 1px 6px 0px #2e2f4214;
+
+    cursor: pointer;
+  }
 }
 
 .card-container {
@@ -1318,8 +1321,6 @@ section {
 }
 
 .custom-input {
-  position: relative;
-
   display: inline-flex;
   align-items: center;
   justify-content: center;
