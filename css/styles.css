@@ -908,8 +908,8 @@ section {
     align-items: baseline;
   }
   @media (min-width: 768px) and (max-width: 1157px) {
+    max-width: 584px;
     flex-wrap: wrap;
-    padding-left: 100px;
   }
 }
 
@@ -969,6 +969,7 @@ section {
   }
 
   @media screen and (min-width: 768px) {
+    margin-right: 24px;
     margin-bottom: 72px;
   }
 
@@ -1023,11 +1024,6 @@ section {
 .social-container {
   @media screen and (max-width: 767px) {
     margin: 0 auto;
-  }
-
-  @media screen and (min-width: 768px) {
-    margin-left: 24px;
-    margin-right: auto;
   }
 
   @media screen and (min-width: 1158px) {
