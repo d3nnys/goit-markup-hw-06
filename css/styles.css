@@ -1122,9 +1122,13 @@ section {
 .footer-text {
   display: block;
   margin: 0 auto;
-  max-width: 264px;
+  max-width: 288px;
 
   color: #f4f4fd;
+
+  @media screen and (min-width: 768px) {
+    max-width: 264px;
+  }
 
   @media screen and (min-width: 1158px) {
     margin-bottom: 0;
