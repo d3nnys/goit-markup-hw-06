@@ -1077,6 +1077,7 @@ section {
   padding-left: 16px;
 
   border: 1px solid var(--clr-white);
+  outline: none;
   border-radius: 4px;
   background-color: transparent;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
