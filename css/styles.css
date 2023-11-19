@@ -151,9 +151,15 @@ section {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  margin-right: 76px;
-
   color: var(--clr-iris);
+
+  @media screen and (min-width: 768px) {
+    margin-right: 120px;
+  }
+
+  @media screen and (min-width: 1158px) {
+    margin-right: 76px;
+  }
 }
 
 .page-header .container {
