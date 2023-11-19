@@ -150,15 +150,33 @@
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-list-item">
-              <img
-                class="team-list-item-img"
-                src="./images/team1.jpg"
-                srcset="./images/team1x2.jpg 2x, ./images/team1x3.jpg 3x"
-                alt="guy with a bread"
-                width="264"
-                height="260"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team1.webp   1x,
+                    ./images/team1x2.webp 2x,
+                    ./images/team1x3.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team1.jpg   1x,
+                    ./images/team1x2.jpg 2x,
+                    ./images/team1x3.jpg 3x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="team-list-item-img"
+                  src="./images/team1.jpg"
+                  alt="guy with a bread"
+                  width="264"
+                  height="260"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team-list-item-box">
                 <h3 class="team-list-item-box-subtitle">Mark Guerrero</h3>
                 <p class="team-list-item-box-text">Product Designer</p>
@@ -231,15 +249,33 @@
               </div>
             </li>
             <li class="team-list-item">
-              <img
-                class="team-list-item-img"
-                src="./images/team2.jpg"
-                srcset="./images/team2x2.jpg 2x, ./images/team2x3.jpg 3x"
-                alt="a very cheerful guy"
-                width="264"
-                height="260"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team2.webp   1x,
+                    ./images/team2x2.webp 2x,
+                    ./images/team2x3.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team2.jpg   1x,
+                    ./images/team2x2.jpg 2x,
+                    ./images/team2x3.jpg 3x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="team-list-item-img"
+                  src="./images/team2.jpg"
+                  alt="a very cheerful guy"
+                  width="264"
+                  height="260"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team-list-item-box">
                 <h3 class="team-list-item-box-subtitle">Tom Ford</h3>
                 <p class="team-list-item-box-text">Frontend Developer</p>
@@ -312,15 +348,33 @@
               </div>
             </li>
             <li class="team-list-item">
-              <img
-                class="team-list-item-img"
-                src="./images/team3.jpg"
-                srcset="./images/team3x2.jpg 2x, ./images/team3x3.jpg 3x"
-                alt="sweet girl"
-                width="264"
-                height="260"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team3.webp   1x,
+                    ./images/team3x2.webp 2x,
+                    ./images/team3x3.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team3.jpg   1x,
+                    ./images/team3x2.jpg 2x,
+                    ./images/team3x3.jpg 3x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="team-list-item-img"
+                  src="./images/team3.jpg"
+                  alt="sweet girl"
+                  width="264"
+                  height="260"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team-list-item-box">
                 <h3 class="team-list-item-box-subtitle">Camila Garcia</h3>
                 <p class="team-list-item-box-text">Marketing</p>
@@ -393,15 +447,33 @@
               </div>
             </li>
             <li class="team-list-item">
-              <img
-                class="team-list-item-img"
-                src="./images/team4.jpg"
-                srcset="./images/team4x2.jpg 2x, ./images/team4x3.jpg 3x"
-                alt="a guy who develops a graphical interface"
-                width="264"
-                height="260"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team4.webp   1x,
+                    ./images/team4x2.webp 2x,
+                    ./images/team4x3.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team4.jpg   1x,
+                    ./images/team4x2.jpg 2x,
+                    ./images/team4x3.jpg 3x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="team-list-item-img"
+                  src="./images/team4.jpg"
+                  alt="a guy who develops a graphical interface"
+                  width="264"
+                  height="260"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team-list-item-box">
                 <h3 class="team-list-item-box-subtitle">Daniel Wilson</h3>
                 <p class="team-list-item-box-text">UI Designer</p>
@@ -485,12 +557,31 @@
                 <picture>
                   <source
                     srcset="
+                      ./images/portfolio1-desktop.webp    1x,
+                      ./images/portfolio1@2x-desktop.webp 2x,
+                      ./images/portfolio1@3x-desktop.webp 3x
+                    "
+                    media="(min-width: 1158px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
                       ./images/portfolio1-desktop.jpg    1x,
                       ./images/portfolio1@2x-desktop.jpg 2x,
                       ./images/portfolio1@3x-desktop.jpg 3x
                     "
                     media="(min-width: 1158px)"
                     type="image/jpg"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio1-tablet.webp    1x,
+                      ./images/portfolio1@2x-tablet.webp 2x,
+                      ./images/portfolio1@3x-tablet.webp 3x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
                   />
                   <source
                     srcset="
@@ -501,6 +592,16 @@
                     media="(min-width: 768px)"
                     type="image/jpg"
                   />
+
+                  <source
+                    srcset="
+                      ./images/portfolio1-mobile.webp    1x,
+                      ./images/portfolio1@2x-mobile.webp 2x,
+                      ./images/portfolio1@3x-mobile.webp 3x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
                   <source
                     srcset="
                       ./images/portfolio1-mobile.jpg    1x,
@@ -510,8 +611,9 @@
                     media="(max-width: 767px)"
                     type="image/jpg"
                   />
+
                   <img
-                    src="./images/portfolio1-desktop.jpg"
+                    src="./images/portfolio1-mobile.jpg"
                     alt="bank application"
                     width="360"
                     height="300"
@@ -534,12 +636,31 @@
                 <picture>
                   <source
                     srcset="
+                      ./images/portfolio2-desktop.webp    1x,
+                      ./images/portfolio2@2x-desktop.webp 2x,
+                      ./images/portfolio2@3x-desktop.webp 3x
+                    "
+                    media="(min-width: 1158px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
                       ./images/portfolio2-desktop.jpg    1x,
                       ./images/portfolio2@2x-desktop.jpg 2x,
                       ./images/portfolio2@3x-desktop.jpg 3x
                     "
                     media="(min-width: 1158px)"
                     type="image/jpg"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio2-tablet.webp    1x,
+                      ./images/portfolio2@2x-tablet.webp 2x,
+                      ./images/portfolio2@3x-tablet.webp 3x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
                   />
                   <source
                     srcset="
@@ -550,6 +671,16 @@
                     media="(min-width: 768px)"
                     type="image/jpg"
                   />
+
+                  <source
+                    srcset="
+                      ./images/portfolio2-mobile.webp    1x,
+                      ./images/portfolio2@2x-mobile.webp 2x,
+                      ./images/portfolio2@3x-mobile.webp 3x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
                   <source
                     srcset="
                       ./images/portfolio2-mobile.jpg    1x,
@@ -559,8 +690,9 @@
                     media="(max-width: 767px)"
                     type="image/jpg"
                   />
+
                   <img
-                    src="./images/portfolio2-desktop.jpg"
+                    src="./images/portfolio2-mobile.jpg"
                     alt="scanning of qr codes"
                     width="360"
                     height="300"
@@ -583,12 +715,31 @@
                 <picture>
                   <source
                     srcset="
+                      ./images/portfolio3-desktop.webp    1x,
+                      ./images/portfolio3@2x-desktop.webp 2x,
+                      ./images/portfolio3@3x-desktop.webp 3x
+                    "
+                    media="(min-width: 1158px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
                       ./images/portfolio3-desktop.jpg    1x,
                       ./images/portfolio3@2x-desktop.jpg 2x,
                       ./images/portfolio3@3x-desktop.jpg 3x
                     "
                     media="(min-width: 1158px)"
                     type="image/jpg"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio3-tablet.webp    1x,
+                      ./images/portfolio3@2x-tablet.webp 2x,
+                      ./images/portfolio3@3x-tablet.webp 3x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
                   />
                   <source
                     srcset="
@@ -599,6 +750,16 @@
                     media="(min-width: 768px)"
                     type="image/jpg"
                   />
+
+                  <source
+                    srcset="
+                      ./images/portfolio3-mobile.webp    1x,
+                      ./images/portfolio3@2x-mobile.webp 2x,
+                      ./images/portfolio3@3x-mobile.webp 3x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
                   <source
                     srcset="
                       ./images/portfolio3-mobile.jpg    1x,
@@ -608,8 +769,9 @@
                     media="(max-width: 767px)"
                     type="image/jpg"
                   />
+
                   <img
-                    src="./images/portfolio3-desktop.jpg"
+                    src="./images/portfolio3-mobile.jpg"
                     alt="application on your phone and laptop"
                     width="360"
                     height="300"
@@ -632,12 +794,31 @@
                 <picture>
                   <source
                     srcset="
+                      ./images/portfolio4-desktop.webp    1x,
+                      ./images/portfolio4@2x-desktop.webp 2x,
+                      ./images/portfolio4@3x-desktop.webp 3x
+                    "
+                    media="(min-width: 1158px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
                       ./images/portfolio4-desktop.jpg    1x,
                       ./images/portfolio4@2x-desktop.jpg 2x,
                       ./images/portfolio4@3x-desktop.jpg 3x
                     "
                     media="(min-width: 1158px)"
                     type="image/jpg"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio4-tablet.webp    1x,
+                      ./images/portfolio4@2x-tablet.webp 2x,
+                      ./images/portfolio4@3x-tablet.webp 3x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
                   />
                   <source
                     srcset="
@@ -648,6 +829,16 @@
                     media="(min-width: 768px)"
                     type="image/jpg"
                   />
+
+                  <source
+                    srcset="
+                      ./images/portfolio4-mobile.webp    1x,
+                      ./images/portfolio4@2x-mobile.webp 2x,
+                      ./images/portfolio4@3x-mobile.webp 3x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
                   <source
                     srcset="
                       ./images/portfolio4-mobile.jpg    1x,
@@ -657,8 +848,9 @@
                     media="(max-width: 767px)"
                     type="image/jpg"
                   />
+
                   <img
-                    src="./images/portfolio4-desktop.jpg"
+                    src="./images/portfolio4-mobile.jpg"
                     alt="driver in the car"
                     width="360"
                     height="300"
@@ -681,12 +873,31 @@
                 <picture>
                   <source
                     srcset="
+                      ./images/portfolio5-desktop.webp    1x,
+                      ./images/portfolio5@2x-desktop.webp 2x,
+                      ./images/portfolio5@3x-desktop.webp 3x
+                    "
+                    media="(min-width: 1158px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
                       ./images/portfolio5-desktop.jpg    1x,
                       ./images/portfolio5@2x-desktop.jpg 2x,
                       ./images/portfolio5@3x-desktop.jpg 3x
                     "
                     media="(min-width: 1158px)"
                     type="image/jpg"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio5-tablet.webp    1x,
+                      ./images/portfolio5@2x-tablet.webp 2x,
+                      ./images/portfolio5@3x-tablet.webp 3x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
                   />
                   <source
                     srcset="
@@ -697,6 +908,16 @@
                     media="(min-width: 768px)"
                     type="image/jpg"
                   />
+
+                  <source
+                    srcset="
+                      ./images/portfolio5-mobile.webp    1x,
+                      ./images/portfolio5@2x-mobile.webp 2x,
+                      ./images/portfolio5@3x-mobile.webp 3x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
                   <source
                     srcset="
                       ./images/portfolio5-mobile.jpg    1x,
@@ -706,8 +927,9 @@
                     media="(max-width: 767px)"
                     type="image/jpg"
                   />
+
                   <img
-                    src="./images/portfolio5-desktop.jpg"
+                    src="./images/portfolio5-mobile.jpg"
                     alt="illustrative pictures on your phone"
                     width="360"
                     height="300"
@@ -730,12 +952,31 @@
                 <picture>
                   <source
                     srcset="
+                      ./images/portfolio6-desktop.webp    1x,
+                      ./images/portfolio6@2x-desktop.webp 2x,
+                      ./images/portfolio6@3x-desktop.webp 3x
+                    "
+                    media="(min-width: 1158px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
                       ./images/portfolio6-desktop.jpg    1x,
                       ./images/portfolio6@2x-desktop.jpg 2x,
                       ./images/portfolio6@3x-desktop.jpg 3x
                     "
                     media="(min-width: 1158px)"
                     type="image/jpg"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio6-tablet.webp    1x,
+                      ./images/portfolio6@2x-tablet.webp 2x,
+                      ./images/portfolio6@3x-tablet.webp 3x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
                   />
                   <source
                     srcset="
@@ -746,6 +987,16 @@
                     media="(min-width: 768px)"
                     type="image/jpg"
                   />
+
+                  <source
+                    srcset="
+                      ./images/portfolio6-mobile.webp    1x,
+                      ./images/portfolio6@2x-mobile.webp 2x,
+                      ./images/portfolio6@3x-mobile.webp 3x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
                   <source
                     srcset="
                       ./images/portfolio6-mobile.jpg    1x,
@@ -755,8 +1006,9 @@
                     media="(max-width: 767px)"
                     type="image/jpg"
                   />
+
                   <img
-                    src="./images/portfolio6-desktop.jpg"
+                    src="./images/portfolio6-mobile.jpg"
                     srcset="
                       ./images/portfolio6x2.jpg 2x,
                       ./images/portfolio6x3.jpg 3x
@@ -1001,123 +1253,123 @@
       </div>
     </div>
     <div class="mobile-menu js-menu-container">
-      <div class="container">
-        <button class="mobile-menu-btn js-close-menu" type="button">
-          <svg
-            class="mobile-menu-icon"
-            width="8"
-            height="8"
-            aria-label="menu-icon"
-          >
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
-        <nav class="mobile-menu-nav">
-          <ul class="mobile-menu-list">
-            <li class="mobile-menu-list-item">
-              <a
-                class="mobile-menu-list-item-link header-link current"
-                href="./index.html"
-                >Studio</a
-              >
-            </li>
-            <li class="mobile-menu-list-item">
-              <a class="mobile-menu-list-item-link header-link" href=""
-                >Portfolio</a
-              >
-            </li>
-            <li class="mobile-menu-list-item">
-              <a class="mobile-menu-list-item-link header-link" href=""
-                >Contacts</a
-              >
-            </li>
-          </ul>
-        </nav>
-        <address class="mobile-menu-contact">
-          <ul class="mobile-menu-contact-list">
-            <li class="mobile-menu-contact-list-item">
-              <a
-                class="mobile-menu-contact-list-item-link current"
-                href="tel:110001111111"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-            <li class="mobile-menu-contact-list-item">
-              <a
-                class="mobile-menu-contact-list-item-link"
-                href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-          </ul>
-        </address>
-        <ul class="header-social-list">
-          <li class="header-social-list-item">
+      <!-- <div class="container"> -->
+      <button class="mobile-menu-btn js-close-menu" type="button">
+        <svg
+          class="mobile-menu-icon"
+          width="8"
+          height="8"
+          aria-label="menu-icon"
+        >
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <nav class="mobile-menu-nav">
+        <ul class="mobile-menu-list">
+          <li class="mobile-menu-list-item">
             <a
-              class="header-social-list-item-link"
-              href="https://www.instagram.com/"
-              target="_blank"
+              class="mobile-menu-list-item-link header-link current"
+              href="./index.html"
+              >Studio</a
             >
-              <svg
-                class="header-social-list-item-icon"
-                width="24"
-                height="24"
-                aria-label="instagram-icon"
-              >
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
           </li>
-          <li class="header-social-list-item">
-            <a
-              class="header-social-list-item-link"
-              href="https://twitter.com/"
-              target="_blank"
+          <li class="mobile-menu-list-item">
+            <a class="mobile-menu-list-item-link header-link" href=""
+              >Portfolio</a
             >
-              <svg
-                class="header-social-list-item-icon"
-                width="24"
-                height="24"
-                aria-label="twitter-icon"
-              >
-                <use href="./images/icons.svg#icon-twitter"></use>
-              </svg>
-            </a>
           </li>
-          <li class="header-social-list-item">
-            <a
-              class="header-social-list-item-link"
-              href="https://facebook.com/"
-              target="_blank"
+          <li class="mobile-menu-list-item">
+            <a class="mobile-menu-list-item-link header-link" href=""
+              >Contacts</a
             >
-              <svg
-                class="header-social-list-item-icon"
-                width="24"
-                height="24"
-                aria-label="facebook-icon"
-              >
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="header-social-list-item">
-            <a
-              class="header-social-list-item-link"
-              href="https://linkedin.com/"
-              target="_blank"
-            >
-              <svg
-                class="header-social-list-item-icon"
-                width="24"
-                height="24"
-                aria-label="linkedin-icon"
-              >
-                <use href="./images/icons.svg#icon-linkedin"></use>
-              </svg>
-            </a>
           </li>
         </ul>
-      </div>
+      </nav>
+      <address class="mobile-menu-contact">
+        <ul class="mobile-menu-contact-list">
+          <li class="mobile-menu-contact-list-item">
+            <a
+              class="mobile-menu-contact-list-item-link current"
+              href="tel:110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="mobile-menu-contact-list-item">
+            <a
+              class="mobile-menu-contact-list-item-link"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+      </address>
+      <ul class="header-social-list">
+        <li class="header-social-list-item">
+          <a
+            class="header-social-list-item-link"
+            href="https://www.instagram.com/"
+            target="_blank"
+          >
+            <svg
+              class="header-social-list-item-icon"
+              width="24"
+              height="24"
+              aria-label="instagram-icon"
+            >
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-social-list-item">
+          <a
+            class="header-social-list-item-link"
+            href="https://twitter.com/"
+            target="_blank"
+          >
+            <svg
+              class="header-social-list-item-icon"
+              width="24"
+              height="24"
+              aria-label="twitter-icon"
+            >
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-social-list-item">
+          <a
+            class="header-social-list-item-link"
+            href="https://facebook.com/"
+            target="_blank"
+          >
+            <svg
+              class="header-social-list-item-icon"
+              width="24"
+              height="24"
+              aria-label="facebook-icon"
+            >
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-social-list-item">
+          <a
+            class="header-social-list-item-link"
+            href="https://linkedin.com/"
+            target="_blank"
+          >
+            <svg
+              class="header-social-list-item-icon"
+              width="24"
+              height="24"
+              aria-label="linkedin-icon"
+            >
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <!-- </div> -->
     </div>
     <script
       defer
